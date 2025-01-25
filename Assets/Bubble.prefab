@@ -99,5 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalPosition: {x: 0, y: 0, z: 0}
   originalScale: {x: 0, y: 0, z: 0}
+  originalTime: 0
   driftScale: 1
   pulseScale: 0.02
+  fauxlocity: {x: 0, y: 0, z: 0}
+  waterDrag: 5
