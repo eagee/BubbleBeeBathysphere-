@@ -11,7 +11,6 @@ public class BubbleEmmitter : MonoBehaviour
     private float _timer = 0;
     void Update()
     {
-        
         _timer += Time.deltaTime;
         if (_timer >= emmisionRate)
         {
