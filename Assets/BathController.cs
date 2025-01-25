@@ -12,17 +12,15 @@ public class BathController : MonoBehaviour
     public float vertSpeed = 10f;
     public float bubbleTime;
     public float bubbleCooldown = 1f;
-    public float bubbleOffset = 10f;
+    Nozzle nozzle;
+    public GameObject bubblePrefab;
 
     void Update()
     {
-        // Smoothly tilts a transform towards a target rotation.
-        // float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
-        // float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
 
         tiltAngle += Input.GetAxis("Horizontal") * tiltSpeed * Time.deltaTime;
 
-        // Rotate the cube by converting the angles into a quaternion.
+        // Rotate by converting the angles into a quaternion.
         Quaternion target = Quaternion.Euler(0, 0, tiltAngle);
 
         // Dampen towards the target rotation
@@ -30,19 +28,25 @@ public class BathController : MonoBehaviour
         transform.position += Vector3.up * Input.GetAxis("Vertical") * vertSpeed * Time.deltaTime;
 
         if (Input.GetButtonDown("Fire1") && Time.time > bubbleTime) {
-            bubbleTime += bubbleCooldown;
-            SpawnBubble(transform.forward * bubbleOffset + transform.right * 10f);
+            bubbleTime = Time.time + bubbleCooldown;
+            SpawnBubble();
         }
     }
 
-    void SpawnBubble(Vector3 origin) {
+    void SpawnBubble() {
         Debug.Log("Bathysphere has rotation " + transform.rotation);
-        Debug.Log("Spawning bubble at " + origin);
+        if (nozzle) {
+            Debug.Log("Nozzle position is " + nozzle.transform.position);
+            Instantiate(bubblePrefab, nozzle.transform.position, Quaternion.identity);
+        } else {
+            Debug.LogWarning("No nozzle?");
+        }
     }
 
     void Start()
     {
-        bubbleTime = Time.time;    
+        bubbleTime = Time.time;
+        nozzle = GetComponentInChildren<Nozzle>(true);    
     }
 
 }
