@@ -30,6 +30,16 @@ public class BathController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, target,  Time.deltaTime * smooth);
         transform.position += Vector3.up * Input.GetAxis("Vertical") * vertSpeed * Time.deltaTime;
 
+
+        // reset stuff when first hitting fire button
+        if (Input.GetButtonDown("Fire1")) {
+            charging = 0f;
+            if (nozzleLight) {
+                nozzleLight.intensity = 0f;
+            }
+        }
+
+        // increase charge while fire button held down
         if (Input.GetButton("Fire1")) {
             charging += Time.deltaTime;
             if (nozzleLight) {
@@ -37,8 +47,8 @@ public class BathController : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonUp("Fire1") && Time.time > bubbleTime) {
-            bubbleTime = Time.time + bubbleCooldown;
+        if (Input.GetButtonUp("Fire1")) {
+            bubbleTime = Time.time + bubbleCooldown; // cooldown disabled for now
             SpawnBubble(0.5f + charging * 2);
             charging = 0f;
             if (nozzleLight) {
