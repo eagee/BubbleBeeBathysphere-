@@ -18,7 +18,7 @@ public class BathController : MonoBehaviour
     public GameObject bubblePrefab;
     public float charging;
 
-    Vector3 fauxlocity;
+    public Vector3 fauxlocity;
 
     Engine engine;
     float engineSpeed = 5f;
