@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SecondPlayer : MonoBehaviour
+public class UmbrellaPlayer : MonoBehaviour
 {
 
      [SerializeField] Rigidbody2D rb;
