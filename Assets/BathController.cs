@@ -18,6 +18,11 @@ public class BathController : MonoBehaviour
     public GameObject bubblePrefab;
     public float charging;
 
+    Vector3 fauxlocity;
+
+    Engine engine;
+    float engineSpeed = 5f;
+
     void Update()
     {
 
@@ -28,8 +33,23 @@ public class BathController : MonoBehaviour
 
         // Dampen towards the target rotation
         transform.rotation = Quaternion.Slerp(transform.rotation, target,  Time.deltaTime * smooth);
-        transform.position += Vector3.up * Input.GetAxis("Vertical") * vertSpeed * Time.deltaTime;
+        
+        // Replacing with tank controls:
+        // transform.position += Vector3.up * Input.GetAxis("Vertical") * vertSpeed * Time.deltaTime;
+        transform.Translate(fauxlocity * engineSpeed * Time.deltaTime, Space.World);
 
+        if (Input.GetButton("Jump")) {
+            if (engine) {
+                Vector3 engineDirection = engine.transform.position - transform.position;
+                Debug.Log("Engine direction is " + engineDirection);
+                fauxlocity -= engineDirection.normalized * Time.deltaTime;
+                Debug.Log("fauxlocity is " + fauxlocity);
+            } else {
+                Debug.LogWarning("No engine?");
+            }
+        } else {
+            fauxlocity = Vector3.zero;
+        }
 
         // reset stuff when first hitting fire button
         if (Input.GetButtonDown("Fire1")) {
@@ -84,11 +104,16 @@ public class BathController : MonoBehaviour
     {
         charging = 0f;
         bubbleTime = Time.time;
+
         nozzle = GetComponentInChildren<Nozzle>(true);   
         nozzleLight = GetComponentInChildren<Light2D>(true); 
         if (nozzleLight == null) {
             Debug.LogWarning("No nozzle light found?");
         }
+
+        engine = GetComponentInChildren<Engine>(true);   
+
+        fauxlocity = new Vector3(0,0,0);
     }
 
 }
