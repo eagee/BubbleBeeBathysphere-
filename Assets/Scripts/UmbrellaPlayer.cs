@@ -34,11 +34,11 @@ public class UmbrellaPlayer : MonoBehaviour
         
         float currentHorizontal = rb.velocity.x;
         float targetHorizontal = 0;
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.J))
         {
             targetHorizontal = -sideSpeed;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.L))
         {
             targetHorizontal = sideSpeed;
         }
