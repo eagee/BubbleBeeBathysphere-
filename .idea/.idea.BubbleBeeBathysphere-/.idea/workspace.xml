@@ -37,26 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\eagan\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\eagan\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\eagan\\AppData\\Local\\Symbols\\src&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Output\BubbleBeeBathysphere.exe" />
@@ -87,6 +81,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -97,6 +94,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -113,8 +113,7 @@
       <updated>1737837636955</updated>
       <workItem from="1737837639623" duration="678000" />
       <workItem from="1737845500653" duration="6401000" />
-      <workItem from="1737883083178" duration="2644000" />
-      <workItem from="1737906299964" duration="3427000" />
+      <workItem from="1737857413624" duration="267000" />
     </task>
     <servers />
   </component>
@@ -135,6 +134,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UmbrellaPlayer.cs</url>
+          <line>99</line>
+          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\UmbrellaPlayer.cs" containingFunctionPresentation="Method 'OnBubbleCollumnStay'">
+            <startOffsets>
+              <option value="2740" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2767" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DiverSpriteManager.cs</url>
           <line>10</line>
           <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\DiverSpriteManager.cs" containingFunctionPresentation="Method 'Start'" />
@@ -143,7 +155,14 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/BathController.cs</url>
           <line>29</line>
-          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\BathController.cs" containingFunctionPresentation="Method 'OnCollisionEnter'" />
+          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\BathController.cs" containingFunctionPresentation="Method 'OnCollisionEnter'">
+            <startOffsets>
+              <option value="672" />
+            </startOffsets>
+            <endOffsets>
+              <option value="696" />
+            </endOffsets>
+          </properties>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
