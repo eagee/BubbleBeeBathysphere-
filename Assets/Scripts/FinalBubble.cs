@@ -19,9 +19,9 @@ public class FinalBubble : MonoBehaviour
         }
         
         UmbrellaPlayer umbrellaPlayer = other.GetComponentInParent<UmbrellaPlayer>();
-        if (umbrellaPlayer != null)
+        if (umbrellaPlayer != null && !umbrellaPlayer.IsPlant)
         {
-            umbrellaPlayer.gameObject.SetActive(true);
+            umbrellaPlayer.gameObject.SetActive(false);
             _DiverSecured = true;
         }
 
@@ -34,7 +34,11 @@ public class FinalBubble : MonoBehaviour
 
     public void OnCompleted()
     {
-        
+        Camera.main.GetComponent<SmoothCameraFollow>().target = this.transform;
+    }
+
+    private void Update()
+    {
         
     }
 }
