@@ -26,6 +26,9 @@ public class BubbleWatcher : MonoBehaviour
         {
             if (collider.tag == "Bubble")
             {
+                BubblePopper popper = collider.GetComponent<BubblePopper>();
+                if (popper != null)
+                    popper.OnCollide();
                 return true;
             }
         }

@@ -48,23 +48,10 @@ public class UmbrellaPlayer : MonoBehaviour
         UpdateSprite(currentVertical, -currentHorizontal);
         
         rb.velocity = velocity;
+        _isInBubble = false;
     }
     
-    List<Collider2D> colliders = new List<Collider2D>();
 
-    public bool IsInBubble()
-    {
-        foreach (var collider in colliders)
-        {
-            if (collider.tag == "Bubble")
-            {
-                return true;
-            }
-        }
-
-        return false;
-
-    }
 
     public void UpdateSprite(float verticalspeed, float horizontalspeed)
     {
@@ -91,13 +78,15 @@ public class UmbrellaPlayer : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        colliders.Add(other);
-    }
 
-    private void OnTriggerExit2D(Collider2D other)
+    bool _isInBubble = false;
+    public bool IsInBubble()
     {
-        colliders.Remove(other);
+        return _isInBubble;
+    }
+    public void OnBubbleStay()
+    {
+        Debug.Log("OnBubbleStay");
+        _isInBubble = true;
     }
 }
