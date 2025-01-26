@@ -6,9 +6,9 @@ public class MusicPlayer : MonoBehaviour
 {
     [SerializeField] private MusicPhrase _startPhrase;
     [SerializeField] private int _timeSignature;
-    [SerializeField] private float _bpm; 
+    [SerializeField] private float _bpm;
     [SerializeField] private AudioSource _audioSource;
-    
+
     private MusicPhrase _currentPhrase;
     private float _currentTime;
 
@@ -17,9 +17,8 @@ public class MusicPlayer : MonoBehaviour
     private void Start()
     {
         _measureDuration = _timeSignature * 60f / _bpm;
-        
-        _currentPhrase = _startPhrase;
-        _currentTime = _currentPhrase.measures * _measureDuration;
+
+        SetCurrentPhrase(_startPhrase);
     }
 
     private void Update()
@@ -27,10 +26,15 @@ public class MusicPlayer : MonoBehaviour
         _currentTime -= Time.deltaTime;
         if (_currentTime <= 0)
         {
-            _currentPhrase = _currentPhrase.GetNextPhrase();
-            _currentTime = _currentPhrase.measures * _measureDuration;
-
-            _currentPhrase.Play(_audioSource);
+            SetCurrentPhrase(_currentPhrase.GetNextPhrase());
         }
     }
+
+    private void SetCurrentPhrase(MusicPhrase phrase)
+    {
+        _currentPhrase = phrase;
+        _currentTime = _currentPhrase.measures * _measureDuration;
+        _currentPhrase.Play(_audioSource);
+    }
+
 }
