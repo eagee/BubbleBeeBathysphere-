@@ -13,6 +13,8 @@ public class UmbrellaPlayer : MonoBehaviour
      [SerializeField] float floatSpeed = 5;
      [SerializeField] float sideSpeed = 5;
      [SerializeField] float transitionRate = 0.5f;
+     
+     Vector2 forceDirection = Vector2.zero;
 
     void Start()
     {
@@ -43,12 +45,14 @@ public class UmbrellaPlayer : MonoBehaviour
             targetHorizontal = sideSpeed;
         }
         currentHorizontal = Mathf.Lerp(currentHorizontal, targetHorizontal, Time.deltaTime * transitionRate);
-        velocity += targetHorizontal*Vector2.right;
+        velocity += currentHorizontal*Vector2.right;
+        velocity += forceDirection;
         
         UpdateSprite(currentVertical, -currentHorizontal);
         
         rb.velocity = velocity;
         _isInBubble = false;
+        forceDirection = Vector2.zero;
     }
     
 
@@ -88,5 +92,11 @@ public class UmbrellaPlayer : MonoBehaviour
     {
         Debug.Log("OnBubbleStay");
         _isInBubble = true;
+    }
+
+    public void OnBubbleCollumnStay(Vector2 direction)
+    {
+        Debug.Log("OnBubbleCollumnStay : " + direction);
+        forceDirection = direction;
     }
 }

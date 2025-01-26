@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public class BubbleWatcher : MonoBehaviour
 {
     [SerializeField] private UnityEvent OnBubbleStay;
+    [SerializeField] private UnityEvent<Vector2> OnBubbleCollumnStay;
     
     
     List<Collider2D> colliders = new List<Collider2D>();
@@ -44,5 +45,10 @@ public class BubbleWatcher : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         colliders.Remove(other);
+    }
+
+    public void OnCollumnStay(Vector2 forward)
+    {
+        OnBubbleCollumnStay.Invoke(forward);
     }
 }
