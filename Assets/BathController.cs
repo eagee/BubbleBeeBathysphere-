@@ -23,6 +23,10 @@ public class BathController : MonoBehaviour
     Engine engine;
     float engineSpeed = 5f;
 
+    public SpriteRenderer glass;
+
+    public float airLevel;
+
     void Update()
     {
 
@@ -34,8 +38,7 @@ public class BathController : MonoBehaviour
         // Dampen towards the target rotation
         transform.rotation = Quaternion.Slerp(transform.rotation, target,  Time.deltaTime * smooth);
         
-        // Replacing with tank controls:
-        // transform.position += Vector3.up * Input.GetAxis("Vertical") * vertSpeed * Time.deltaTime;
+        // Tank controls:
         transform.Translate(fauxlocity * engineSpeed * Time.deltaTime, Space.World);
 
         if (Input.GetButton("Jump")) {
@@ -52,22 +55,24 @@ public class BathController : MonoBehaviour
         }
 
         // reset stuff when first hitting fire button
-        if (Input.GetButtonDown("Fire1")) {
-            charging = 0f;
+        if (Input.GetButtonDown("Fire1")) { //  && airLevel > 0f) {
+            airLevel -= 0.1f;
+            charging = 0.1f;
             if (nozzleLight) {
                 nozzleLight.intensity = 0f;
             }
         }
 
         // increase charge while fire button held down
-        if (Input.GetButton("Fire1")) {
+        if (Input.GetButton("Fire1")) { // && airLevel > 0f) {
+            airLevel -= Time.deltaTime;
             charging += Time.deltaTime;
             if (nozzleLight) {
                 nozzleLight.intensity = charging * 5f;
             }
         }
 
-        if (Input.GetButtonUp("Fire1")) {
+        if (Input.GetButtonUp("Fire1") && charging > 0f) {
             bubbleTime = Time.time + bubbleCooldown; // cooldown disabled for now
             SpawnBubble(0.5f + charging * 2);
             charging = 0f;
@@ -75,6 +80,17 @@ public class BathController : MonoBehaviour
                 nozzleLight.intensity = 0f;
             }
         }
+
+        if (airLevel < 1.0f) {
+            airLevel += Time.deltaTime * 0.1f;
+        }
+
+        Color c = glass.color;
+        c.a = 1.0f - airLevel;
+        // c.r = (Mathf.Sin(Time.time * 1.5f) + 1f) * 0.5f;
+        // c.g = (Mathf.Sin(Time.time * 2.5f) + 1f) * 0.5f;
+        // c.b = (Mathf.Sin(Time.time * 3.5f) + 1f) * 0.5f;
+        glass.color = c;
     }
 
     void SpawnBubble(float force) {
@@ -114,6 +130,8 @@ public class BathController : MonoBehaviour
         engine = GetComponentInChildren<Engine>(true);   
 
         fauxlocity = new Vector3(0,0,0);
+
+        airLevel = 1.0f;
     }
 
 }
