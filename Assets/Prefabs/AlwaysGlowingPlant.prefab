@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5606117998127966222
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 798581358802888913, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: alwaysTriggered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 798581358802888913, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: lightTriggeredColor
+      value: '#9BFFFA'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13787806
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.11818121
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42671221
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.754
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.572
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9788784
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.20444341
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 23.594
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713533806503014400, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_Color.b
+      value: 0.98129284
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713533806503014400, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713533806503014400, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6094339
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713533806503014400, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0.25970504
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116443169298259341, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051414299043167077, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_Name
+      value: AlwaysGlowingPlant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
