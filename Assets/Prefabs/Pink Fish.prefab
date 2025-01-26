@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1228349073214786640}
-  - component: {fileID: 6116443169298259341}
+  - component: {fileID: 6862051731538064367}
+  - component: {fileID: 4598430847214745985}
+  - component: {fileID: 4768509430217449777}
   m_Layer: 0
   m_Name: Pink Fish
   m_TagString: Untagged
@@ -25,14 +27,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8051414299043167077}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.99970317, w: -0.024364306}
   m_LocalPosition: {x: 10.42, y: -1.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6116443169298259341
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -182.792}
+--- !u!114 &6862051731538064367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8051414299043167077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4caba96db7b48b42904056ce69ad4df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swimWidth: 5
+  swimHeight: 0.5
+  horizontalSpeed: 2
+  sineWaveFrequency: 2
+--- !u!212 &4598430847214745985
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,15 +90,31 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 73f82c517563942a0be81607bd133b74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.2, y: 0.88}
+  m_Size: {x: 3.6, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4768509430217449777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8051414299043167077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4caba96db7b48b42904056ce69ad4df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swimWidth: 20
+  swimHeight: 0.5
+  horizontalSpeed: 10
+  sineWaveFrequency: 2
