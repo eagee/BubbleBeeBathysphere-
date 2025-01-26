@@ -34,6 +34,8 @@ public class GlowingPlant : MonoBehaviour
 
     private Coroutine lightCoroutine; // Stores the active coroutine for the light
 
+    public string lightTriggeredColor = "#7DF903";
+
     private void Start()
     {
         RandomAlwayOnTrigger = Random.Range(0f, 3f);
@@ -84,7 +86,7 @@ public class GlowingPlant : MonoBehaviour
 		
 		if(lightCoroutine != null)
 		{
-            targetLight.color = HexToColor("#7DF903");
+            targetLight.color = HexToColor(lightTriggeredColor);
 			return;
 		}
 

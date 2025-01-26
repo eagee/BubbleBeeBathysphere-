@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2a60b340-7e21-4e15-ba8d-52cd01d9515f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bubble.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AlwaysGlowingPlant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AlwaysGlowingPlant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Glowing Plant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Glowing Plant.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_001_Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_001_Map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlowingPlant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlowingPlant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +86,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20948">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="2972">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="20948" />
+      <option name="pid" value="2972" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -105,6 +108,7 @@
       <workItem from="1737837639623" duration="678000" />
       <workItem from="1737845500653" duration="6401000" />
       <workItem from="1737883083178" duration="2644000" />
+      <workItem from="1737906299964" duration="3427000" />
     </task>
     <servers />
   </component>
