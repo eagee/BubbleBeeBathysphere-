@@ -15,6 +15,8 @@ public class UmbrellaPlayer : MonoBehaviour
      
      Vector2 forceDirection = Vector2.zero;
 
+     public bool IsPlant = false;
+     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,11 +40,11 @@ public class UmbrellaPlayer : MonoBehaviour
         
         float currentHorizontal = rb.velocity.x;
         float targetHorizontal = 0;
-        if (Input.GetKey(KeyCode.J))
+        if (Input.GetKey(KeyCode.J) && !IsPlant)
         {
             targetHorizontal = -sideSpeed;
         }
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.L) && !IsPlant)
         {
             targetHorizontal = sideSpeed;
         }
