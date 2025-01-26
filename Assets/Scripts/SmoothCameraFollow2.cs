@@ -1,9 +1,9 @@
-using UnityEditor.MPE;
+
 using UnityEngine;
 
 public class SmoothCameraFollow2 : MonoBehaviour
 {
-    [Header("Target Settings")]
+/*    [Header("Target Settings")]
     public GameObject[] targets; // The players or objects the camera will follow
     public bool[] include_target; // For each target, include in frame if true
     public float max_viewport_size; // Furthest zoom out
@@ -106,4 +106,5 @@ public class SmoothCameraFollow2 : MonoBehaviour
         // Update camera position
         transform.position = smoothPosition;
     }
+    */
 }
