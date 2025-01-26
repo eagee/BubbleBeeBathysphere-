@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a60b340-7e21-4e15-ba8d-52cd01d9515f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eagan_Level_001.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eagan_Level_001.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Glowing Plant.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Glowing Plant.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Plant1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Plant1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Plant2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Plant2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Seaweed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Seaweed.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Closed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Closed.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Half-Open.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Half-Open.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Open.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Open.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Three-Fourths-Open.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Three-Fourths-Open.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TelelportToOwner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TelelportToOwner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="2a60b340-7e21-4e15-ba8d-52cd01d9515f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FishSwimmingBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ParallaxBackground.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -81,22 +69,16 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="2972">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="2972" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -134,36 +116,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UmbrellaPlayer.cs</url>
-          <line>99</line>
-          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\UmbrellaPlayer.cs" containingFunctionPresentation="Method 'OnBubbleCollumnStay'">
-            <startOffsets>
-              <option value="2740" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2767" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DiverSpriteManager.cs</url>
           <line>10</line>
           <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\DiverSpriteManager.cs" containingFunctionPresentation="Method 'Start'" />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/BathController.cs</url>
-          <line>29</line>
-          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\BathController.cs" containingFunctionPresentation="Method 'OnCollisionEnter'">
-            <startOffsets>
-              <option value="672" />
-            </startOffsets>
-            <endOffsets>
-              <option value="696" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
