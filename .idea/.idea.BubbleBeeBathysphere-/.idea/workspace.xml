@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a60b340-7e21-4e15-ba8d-52cd01d9515f" name="Changes" comment="" />
+    <list default="true" id="2a60b340-7e21-4e15-ba8d-52cd01d9515f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eagan_Level_001.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eagan_Level_001.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Glowing Plant.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Glowing Plant.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Plant1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Plant1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Plant2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Plant2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Seaweed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Seaweed.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Closed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Closed.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Half-Open.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Half-Open.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Open.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Plant-Open.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Three-Fourths-Open.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlantsandFish/Umbrella-Three-Fourths-Open.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TelelportToOwner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TelelportToOwner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
