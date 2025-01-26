@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -8,10 +10,16 @@ public class TeleportToPosition : MonoBehaviour
     [Tooltip("Tag to identify the objects to teleport.")]
     public string targetTag = "BathySphere";
 
+    public List<GameObject> objectsToActivate;
+
     public Transform newCameraTarget;
     public Transform newPlayer1Transform;
 
+    private GameObject otherGameObject;
+
     private SmoothCameraFollow cameraFollow;
+
+    private Coroutine teleportCoroutine;
 
     private void Start()
     {
@@ -31,9 +39,25 @@ public class TeleportToPosition : MonoBehaviour
         if (other.CompareTag(targetTag))
         {
             // Move the object to this game object's transform
-            other.transform.position = newPlayer1Transform.transform.position;
+            if (objectsToActivate.Count > 0)
+            {
+                foreach (GameObject obj in objectsToActivate)
+                {
+                    obj.SetActive(true);
+                }
+            }
+            teleportCoroutine = StartCoroutine(TeleportInJustABit());
+            otherGameObject = other.gameObject;
             cameraFollow.target = newCameraTarget;
         }
+    }
+
+    private IEnumerator TeleportInJustABit()
+    {
+        yield return new WaitForSeconds(3f);
+
+        otherGameObject.transform.position = newPlayer1Transform.transform.position;
+        this.gameObject.SetActive(false);
     }
 
     private void OnDrawGizmos()
