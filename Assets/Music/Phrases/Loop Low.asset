@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a011f3146a638f949b729e2be1fb4b80, type: 3}
+  m_Name: Loop Low
+  m_EditorClassIdentifier: 
+  _phrasesAfter:
+  - {fileID: 11400000, guid: ad8625d56a37843478a8f1623edaef40, type: 2}
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 300f3ce4411eb4c4185fce2375b8946c, type: 2}
+  _measures: 8
+  _instrumentGroups:
+  - _instrumentGroup: {fileID: 11400000, guid: f7a5eca2da5ec514c81e4768bcae578a, type: 2}
+    _audioClips:
+    - {fileID: 8300000, guid: 4cdee25eeb2eadf4d91ea55e0a0e6ac0, type: 3}
+  - _instrumentGroup: {fileID: 11400000, guid: 59c15e1c8b96a2c4fb723a58ff04a347, type: 2}
+    _audioClips:
+    - {fileID: 8300000, guid: 6430d6c85044fe44a8e00ffa600595b3, type: 3}
+  - _instrumentGroup: {fileID: 11400000, guid: e5eef95fad7e5624daeef2a8e9a8efb0, type: 2}
+    _audioClips:
+    - {fileID: 8300000, guid: c2f6378324802df408bb6c89bffc5a54, type: 3}
+  - _instrumentGroup: {fileID: 11400000, guid: 7cd1bada89885d04997fa9c59d6bc1ca, type: 2}
+    _audioClips:
+    - {fileID: 8300000, guid: 2389b78de2a76a6408d2a5fa34455a02, type: 3}
