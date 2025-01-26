@@ -90,13 +90,11 @@ public class UmbrellaPlayer : MonoBehaviour
     }
     public void OnBubbleStay()
     {
-        Debug.Log("OnBubbleStay");
         _isInBubble = true;
     }
 
     public void OnBubbleCollumnStay(Vector2 direction)
     {
-        Debug.Log("OnBubbleCollumnStay : " + direction);
         forceDirection = direction;
     }
 }
