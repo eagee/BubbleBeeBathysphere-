@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a60b340-7e21-4e15-ba8d-52cd01d9515f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Music Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Music Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Music Test.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Music Test.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bubble.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_001_Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_001_Map.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,22 +78,16 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20948">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="20948" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -109,6 +104,7 @@
       <updated>1737837636955</updated>
       <workItem from="1737837639623" duration="678000" />
       <workItem from="1737845500653" duration="6401000" />
+      <workItem from="1737883083178" duration="2644000" />
     </task>
     <servers />
   </component>
@@ -128,12 +124,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UmbrellaPlayer.cs</url>
-          <line>99</line>
-          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\UmbrellaPlayer.cs" containingFunctionPresentation="Method 'OnTriggerExit2D'" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DiverSpriteManager.cs</url>
           <line>10</line>
