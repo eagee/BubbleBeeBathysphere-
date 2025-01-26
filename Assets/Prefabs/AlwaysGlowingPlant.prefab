@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: alwaysTriggered
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 798581358802888913, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: lightTriggeredColor
+      value: '#9BFFFA'
+      objectReference: {fileID: 0}
     - target: {fileID: 1228349073214786640, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.13787806
@@ -65,8 +69,24 @@ PrefabInstance:
       value: 23.594
       objectReference: {fileID: 0}
     - target: {fileID: 4713533806503014400, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_Color.b
+      value: 0.98129284
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713533806503014400, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713533806503014400, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6094339
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713533806503014400, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
       propertyPath: m_PointLightInnerRadius
       value: 0.25970504
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116443169298259341, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8051414299043167077, guid: 896c554a02a75b043adfe18317a4f137, type: 3}
       propertyPath: m_Name

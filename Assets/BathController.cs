@@ -22,15 +22,21 @@ public class BathController : MonoBehaviour
 
     public Vector3 fauxlocity;
 
+    public new Rigidbody2D rigidbody;
+    public float accelerationSmoothTime;
+    public float decelerationSmoothTime;
+
     Engine engine;
     float engineSpeed = 5f;
+
+    private Vector2 _smoothVelocity;
 
     private void OnCollisionEnter(Collision other)
     {
         Debug.Log("COLLISION!");
     }
 
-    void Update()
+    void FixedUpdate()
     {
 
         tiltAngle += Input.GetAxis("Horizontal") * tiltSpeed * Time.deltaTime;
@@ -39,13 +45,17 @@ public class BathController : MonoBehaviour
         Quaternion target = Quaternion.Euler(0, 0, tiltAngle);
 
         // Dampen towards the target rotation
-        transform.rotation = Quaternion.Slerp(transform.rotation, target,  Time.deltaTime * smooth);
+        rigidbody.SetRotation(Quaternion.Slerp(transform.rotation, target,  Time.deltaTime * smooth));
         
         // Replacing with tank controls:
         // transform.position += Vector3.up * Input.GetAxis("Vertical") * vertSpeed * Time.deltaTime;
-        transform.Translate(fauxlocity * engineSpeed * Time.deltaTime, Space.World);
 
-        if (Input.GetButton("Jump")) {
+        bool isMoving = Input.GetButton("Jump");
+        
+        
+        rigidbody.velocity = Vector2.SmoothDamp(rigidbody.velocity, fauxlocity * engineSpeed, ref _smoothVelocity, isMoving? accelerationSmoothTime : decelerationSmoothTime);
+        
+        if (isMoving) {
             if (engine) {
                 Vector3 engineDirection = engine.transform.position - transform.position;
                 Debug.Log("Engine direction is " + engineDirection);

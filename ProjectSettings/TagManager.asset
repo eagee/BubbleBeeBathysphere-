@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bubble
+  - Floor
+  - BathySphere
+  - Umbrella
   layers:
   - Default
   - TransparentFX
