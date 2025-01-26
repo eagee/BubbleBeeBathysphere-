@@ -36,6 +36,37 @@ public class BathController : MonoBehaviour
         Debug.Log("COLLISION!");
     }
 
+    void Update()
+    {
+        // reset stuff when first hitting fire button
+        if (Input.GetButtonDown("Fire1")) {
+            // Debug.Log("Bathysphere: FireDown");
+            charging = initialCharge;
+            if (nozzleLight) {
+                nozzleLight.intensity = 0f;
+            }
+        }
+
+        // increase charge while fire button held down
+        if (Input.GetButton("Fire1")) {
+            // Debug.Log("Bathysphere: Fire");
+            charging += Time.deltaTime;
+            if (nozzleLight) {
+                nozzleLight.intensity = charging * 5f;
+            }
+        }
+
+        if (Input.GetButtonUp("Fire1")) {
+            // Debug.Log("Bathysphere: FireUp");
+            charging = 0f;
+            if (nozzleLight) {
+                nozzleLight.intensity = 0f;
+            }
+            SpawnBubble(0.5f + charging * 2);
+        }
+
+    }
+
     void FixedUpdate()
     {
 
@@ -68,30 +99,6 @@ public class BathController : MonoBehaviour
             fauxlocity = Vector3.zero;
         }
 
-        // reset stuff when first hitting fire button
-        if (Input.GetButtonDown("Fire1")) {
-            charging = initialCharge;
-            if (nozzleLight) {
-                nozzleLight.intensity = 0f;
-            }
-        }
-
-        // increase charge while fire button held down
-        if (Input.GetButton("Fire1")) {
-            charging += Time.deltaTime;
-            if (nozzleLight) {
-                nozzleLight.intensity = charging * 5f;
-            }
-        }
-
-        if (Input.GetButtonUp("Fire1")) {
-            bubbleTime = Time.time + bubbleCooldown; // cooldown disabled for now
-            SpawnBubble(0.5f + charging * 2);
-            charging = 0f;
-            if (nozzleLight) {
-                nozzleLight.intensity = 0f;
-            }
-        }
     }
 
     void SpawnBubble(float force) {
