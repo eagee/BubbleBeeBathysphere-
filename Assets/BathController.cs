@@ -49,7 +49,7 @@ public class BathController : MonoBehaviour
 
         // increase charge while fire button held down
         if (Input.GetButton("Fire1")) {
-            // Debug.Log("Bathysphere: Fire");
+            // Debug.Log("Bathysphere: Fire, charging: " + charging);
             charging += Time.deltaTime;
             if (nozzleLight) {
                 nozzleLight.intensity = charging * 5f;
@@ -58,11 +58,11 @@ public class BathController : MonoBehaviour
 
         if (Input.GetButtonUp("Fire1")) {
             // Debug.Log("Bathysphere: FireUp");
+            SpawnBubble(0.5f + charging * 2);
             charging = 0f;
             if (nozzleLight) {
                 nozzleLight.intensity = 0f;
             }
-            SpawnBubble(0.5f + charging * 2);
         }
 
     }
