@@ -23,6 +23,8 @@ public class UmbrellaPlayer : MonoBehaviour
 
     void Update()
     {
+        UpdateSprite(rb.velocity.y, rb.velocity.x);
+        
         float currentVertical = rb.velocity.y;
         
         float targetVertical = -downSpeed;
@@ -48,7 +50,6 @@ public class UmbrellaPlayer : MonoBehaviour
         velocity += currentHorizontal*Vector2.right;
         velocity += forceDirection;
         
-        UpdateSprite(currentVertical, -currentHorizontal);
         
         rb.velocity = velocity;
         _isInBubble = false;
@@ -90,13 +91,11 @@ public class UmbrellaPlayer : MonoBehaviour
     }
     public void OnBubbleStay()
     {
-        Debug.Log("OnBubbleStay");
         _isInBubble = true;
     }
 
     public void OnBubbleCollumnStay(Vector2 direction)
     {
-        Debug.Log("OnBubbleCollumnStay : " + direction);
         forceDirection = direction;
     }
 }
