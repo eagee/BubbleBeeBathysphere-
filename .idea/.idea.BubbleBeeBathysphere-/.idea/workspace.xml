@@ -6,10 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="2a60b340-7e21-4e15-ba8d-52cd01d9515f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BathController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BathController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bubble.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewerBathySphere.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewerBathySphere.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_001_Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_001_Map.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_BurstDebugInformation_DoNotShip/Data/Plugins/x86_64/lib_burst_generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_BurstDebugInformation_DoNotShip/Data/Plugins/x86_64/lib_burst_generated.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/resources.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/sharedassets0.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ParallaxBackground.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -27,26 +39,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "DepressedEagan",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DepressedEagan&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\eagan\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\eagan\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\eagan\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\eagan\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\eagan\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\eagan\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Output\BubbleBeeBathysphere.exe" />
@@ -82,10 +94,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="36332">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="36332" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -102,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737837636955</updated>
       <workItem from="1737837639623" duration="678000" />
-      <workItem from="1737845500653" duration="5179000" />
+      <workItem from="1737845500653" duration="6401000" />
     </task>
     <servers />
   </component>
@@ -124,13 +136,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/UmbrellaPlayer.cs</url>
-          <line>89</line>
+          <line>99</line>
           <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\UmbrellaPlayer.cs" containingFunctionPresentation="Method 'OnTriggerExit2D'">
             <startOffsets>
-              <option value="2479" />
+              <option value="2766" />
             </startOffsets>
             <endOffsets>
-              <option value="2480" />
+              <option value="2767" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
