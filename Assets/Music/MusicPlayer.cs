@@ -16,7 +16,7 @@ public class MusicPlayer : MonoBehaviour
 
     private void Start()
     {
-        _measureDuration = _timeSignature / _bpm;
+        _measureDuration = _timeSignature * 60f / _bpm;
         
         _currentPhrase = _startPhrase;
         _currentTime = _currentPhrase.measures * _measureDuration;

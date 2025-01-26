@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a60b340-7e21-4e15-ba8d-52cd01d9515f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BubbleBeeBathysphere-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewerBathySphere.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NewerBathySphere.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_001_Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_001_Map.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_BurstDebugInformation_DoNotShip/Data/Plugins/x86_64/lib_burst_generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_BurstDebugInformation_DoNotShip/Data/Plugins/x86_64/lib_burst_generated.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/boot.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/Output/BubbleBeeBathysphere_Data/sharedassets0.assets.resS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Music Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Music Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Music Test.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Music Test.unity.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +31,7 @@
   &quot;keyToString&quot;: {
     &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;DepressedEagan&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -89,6 +77,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -99,6 +90,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -137,40 +131,19 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/UmbrellaPlayer.cs</url>
           <line>99</line>
-          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\UmbrellaPlayer.cs" containingFunctionPresentation="Method 'OnTriggerExit2D'">
-            <startOffsets>
-              <option value="2766" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2767" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\UmbrellaPlayer.cs" containingFunctionPresentation="Method 'OnTriggerExit2D'" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DiverSpriteManager.cs</url>
           <line>10</line>
-          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\DiverSpriteManager.cs" containingFunctionPresentation="Method 'Start'">
-            <startOffsets>
-              <option value="287" />
-            </startOffsets>
-            <endOffsets>
-              <option value="287" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\Scripts\DiverSpriteManager.cs" containingFunctionPresentation="Method 'Start'" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/BathController.cs</url>
           <line>29</line>
-          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\BathController.cs" containingFunctionPresentation="Method 'OnCollisionEnter'">
-            <startOffsets>
-              <option value="672" />
-            </startOffsets>
-            <endOffsets>
-              <option value="696" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Eagan\TeamSheeps\BubbleBeeBathysphere-\Assets\BathController.cs" containingFunctionPresentation="Method 'OnCollisionEnter'" />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
