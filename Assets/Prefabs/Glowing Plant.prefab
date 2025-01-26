@@ -149,6 +149,8 @@ MonoBehaviour:
   holdTime: 2
   bobAmplitude: 0.00004
   bobFrequency: 8
+  alwaysTriggered: 0
+  lightTriggeredColor: '#7DF903'
 --- !u!50 &5464809924457683300
 Rigidbody2D:
   serializedVersion: 4
