@@ -5,9 +5,8 @@ using UnityEngine;
 
 public class UmbrellaPlayer : MonoBehaviour
 {
-    [SerializeField] DiverSpriteManager diverSpriteManager;
-
-     [SerializeField] Rigidbody2D rb;
+     private DiverSpriteManager diverSpriteManager;
+     private Rigidbody2D rb;
 
      [SerializeField] float downSpeed = 5;
      [SerializeField] float floatSpeed = 5;
@@ -19,6 +18,7 @@ public class UmbrellaPlayer : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        diverSpriteManager = GetComponentInChildren<DiverSpriteManager>();
     }
 
     void Update()

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,11 +18,17 @@ public class BathController : MonoBehaviour
     Light2D nozzleLight;
     public GameObject bubblePrefab;
     public float charging;
+    public float initialCharge = 0f;
 
     public Vector3 fauxlocity;
 
     Engine engine;
     float engineSpeed = 5f;
+
+    private void OnCollisionEnter(Collision other)
+    {
+        Debug.Log("COLLISION!");
+    }
 
     void Update()
     {
@@ -53,7 +60,7 @@ public class BathController : MonoBehaviour
 
         // reset stuff when first hitting fire button
         if (Input.GetButtonDown("Fire1")) {
-            charging = 0f;
+            charging = initialCharge;
             if (nozzleLight) {
                 nozzleLight.intensity = 0f;
             }
